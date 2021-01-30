@@ -3,42 +3,193 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="HTML-верстальщик, front-end developer">
   <link rel="stylesheet" href="style.css">
-  <title>Светлана</title>
+  <title>W&S Portfolio Svetlana</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <script src='js/jquery-3.3.1.min.js'></script>
+  <script src="js/jquery.tinycarousel.min.js"></script>
+  <script src='js/main.js'></script>
 </head>
-<body class="page">
-  <header class="page-header">
-    <div class="container">
-      <h1 class="page-title">Мой сайт</h1>
-      <p><i>По всем вопросам пишите:</i><br><a href="mailto:hohlova0504@gmail.com">hohlova0504@gmail.com</a></p>
-    </div>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+    <nav class="navbar fixed-top navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">W&S</a>
+      </div>
+      <div class="hamburger" id="js-menu-btn"><span></span></div>
+    <!-- Навигация -->
+      <div class="menu" id="menu">
+        <div class="menu-list">
+          <div class="menu-list__item"><a class="menu-list__link" href="#about-me">Обо мне</a></div>
+          <div class="menu-list__item"><a class="menu-list__link" href="#portfolio">Портфолио</a></div>
+          <div class="menu-list__item"><a class="menu-list__link" href="#contacts">Контакты</a></div>
+        </div>
+      </div>
+    </nav>
   </header>
-  <main>
-    <section class="about container">
-      <h2 class="section-title">Приветствую Вас на своем сайте-портфолио. Меня зовут Светлана. Живу в Санкт-Петербургу. Занимаюсь HTML-версткой сайтов.</h2>
-      <img class="about-image" src="img/main-photo.JPEG" width="147" height="147" alt="Неопознанный енот">
-      <div class="about-content">
-        <p>Начала свой путь с продаж. С 2017 по 2020 год работала менеджером по продажам сначала в транспортной компании, затем инновационного продукта. Пришла к тому, что хочу полностью влиться в веб-дизайн. Владею базовыми знаниями HTML/ CSS. Проходила курс « Веб-дизайн» от OpenEdu (ИТМО). Самостоятельно изучила Adobe Photoshop, Adobe Illustrator, Gimp. Есть базовые знания Java Script и Python. </p>
-        <p>Для меня очень важно иметь возможность развивать свои навыки, заниматься интересными проектами и работать с людьми, у которых мне будет чему поучиться.
-Буду рада, если вы ознакомитесь с моим резюме и рассмотрите мою кандидатуру.</p>
+  <!-- Основной контент -->
+    <div class="container-xxl">
+    <div class="text-center">
+      <img src="/Users/svetlanahohlova/WebstormProjects/svetlana-portfolio.github.io/img/bg-img.jpg" alt="...">
+    </div>
+    <h1>Hello, world!
+      <br>I’am Web-developer</br>
+    </h1>
+      </div>
+    <!-- Обо мне -->
+
+
+    <section id="about-me" class="welcome">
+      <p class="welcome__hello">Здравствуйте. Меня зовут Светлана и я рада
+        приветствовать Вас на своем сайте-портфолио.</p>
+      <p class="welcome__links">Здесь я размещаю свои работы по верстке сайтов.<br>Вы можете с ними <a class="link" href="#portfolio">подробно ознакомиться</a>, а также <a class="link" href="#contacts">связаться со мной.</a>
+      </p>
+    </section>
+    <hr class="content__line">
+    <section class="skills">
+      <h2>Навыки и инструменты, которые я использую</h2>
+      <ul class="skills__skills-box skills-box">
+        <li class="skill-box__skill">
+          <img class="skill-box__skill-img" src="https://image.flaticon.com/icons/png/512/1216/1216733.png" alt="HTML5 логотип">
+          <p>HTML5</p>
+        </li>
+        <li class="skill-box__skill">
+          <img class="skill-box__skill-img" src="https://www.flaticon.com/authors/pixel-perfect" alt="CSS3 логотип">
+          <p>CSS3</p>
+        </li>
+        <li class="skill-box__skill">
+          <img class="skill-box__skill-img" src="https://www.vhv.rs/dpng/d/456-4562295_library-of-javascript-icon-graphic-freeuse-png-files.png" alt="JS логотип">
+          <p>jQuery</p>
+        </li>
+        <li class="skill-box__skill">
+          <img class="skill-box__skill-img" src="https://freeiconshop.com/wp-content/uploads/edd/php-outline.png" alt="PHP логотип">
+          <p>Less</p>
+        </li>
+        <li class="skill-box__skill">
+          <img class="skill-box__skill-img" src="https://camo.githubusercontent.com/a664defdd5c2ec93a3fbfb51e0f2aaafa5dc57bf1e13aa47456ced037b3cebe8/68747470733a2f2f676574626f6f7473747261702e636f6d2f646f63732f352e302f6173736574732f6272616e642f626f6f7473747261702d6c6f676f2d736861646f772e706e67" alt="Bootstrap логотип">
+          <p>Avocode</p>
+        </li>
+        <li class="skill-box__skill">
+          <img class="skill-box__skill-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/The_GIMP_icon_-_gnome.svg/1200px-The_GIMP_icon_-_gnome.svg.png" alt="Gimp логотип">
+          <p>Zeplin</p>
+        </li>
+        <li class="skill-box__skill">
+          <img class="skill-box__skill-img" src="https://macx.ws/uploads/posts/2016-11/1478160600_photoshop-cc-2017.png" alt="PS логотип">
+          <p>PerfectPixel</p>
+        </li>
+        <li class="skill-box__skill">
+          <img class="skill-box__skill-img" src="https://resources.jetbrains.com/storage/products/webstorm/img/meta/webstorm_logo_300x300.png" alt="WebStorm логотип">
+          <p>WebStorm</p>
+        </li>
+      </ul>
+      <h2>Сертификаты</h2>
+      <div id="slider" class="skill__certificates">
+        <div class="buttons prev"><img class="buttons__arrow" src="media/images/arrow-left.png" alt="влево"></div>
+        <div class="viewport">
+          <ul class="overview" style="width: 2310px; left: 0px;">
+            <li><a href="https://geekbrains.ru/certificates/335639" target="_blank" rel="nofollow">
+              <img class="certificates__image" src="media/images/html-css.jpg" alt="Курс «HTML/CSS. Современная web-разработка»" title="Курс «HTML/CSS. Современная web-разработка»">
+            </a></li>
+            <li><a href="https://geekbrains.ru/certificates/483852" target="_blank" rel="nofollow">
+              <img class="certificates__image" src="media/images/html5-css3.jpg" alt="Курс «HTML5 и CSS3. Современные средства Web-разработки»" title="Курс «HTML5 и CSS3. Современные средства Web-разработки»">
+            </a></li>
+            <li><a href="https://geekbrains.ru/certificates/484938" target="_blank" rel="nofollow">
+              <img class="certificates__image" src="media/images/html-css-test.jpg" alt="Тестирование по «HTML&amp;CSS. Сложный уровень»" title="Тестирование по «HTML&amp;CSS. Сложный уровень»">
+            </a></li>
+            <li><a href="https://geekbrains.ru/certificates/503506" target="_blank" rel="nofollow">
+              <img class="certificates__image" src="media/images/js-1.jpg" alt="Курс «JavaScript. Уровень 1. Интерактив на JS»" title="Курс «JavaScript. Уровень 1. Интерактив на JS»">
+            </a></li>
+            <li> <a href="https://geekbrains.ru/certificates/546690" target="_blank" rel="nofollow">
+              <img class="certificates__image" src="media/images/jQuery.jpg" alt="Курс «jQuery для профессионалов. О селекторах, их использовании и сравнении с чистым JavaScript»" title="Курс «jQuery для профессионалов. О селекторах, их использовании и сравнении с чистым JavaScript»">
+            </a></li>
+            <li><a href="https://geekbrains.ru/certificates/547922" target="_blank" rel="nofollow">
+              <img class="certificates__image" src="media/images/git.jpg" alt="Курс «Git. Быстрый старт. Основы работы с Git»" title="Курс «Git. Быстрый старт. Основы работы с Git»">
+            </a></li>
+            <li class="mirrored"><a href="https://geekbrains.ru/certificates/335639" target="_blank" rel="nofollow">
+              <img class="certificates__image" src="media/images/html-css.jpg" alt="Курс «HTML/CSS. Современная web-разработка»" title="Курс «HTML/CSS. Современная web-разработка»">
+            </a></li><li class="mirrored"><a href="https://geekbrains.ru/certificates/483852" target="_blank" rel="nofollow">
+            <img class="certificates__image" src="media/images/html5-css3.jpg" alt="Курс «HTML5 и CSS3. Современные средства Web-разработки»" title="Курс «HTML5 и CSS3. Современные средства Web-разработки»">
+          </a></li><li class="mirrored"><a href="https://geekbrains.ru/certificates/484938" target="_blank" rel="nofollow">
+            <img class="certificates__image" src="media/images/html-css-test.jpg" alt="Тестирование по «HTML&amp;CSS. Сложный уровень»" title="Тестирование по «HTML&amp;CSS. Сложный уровень»">
+          </a></li><li class="mirrored"><a href="https://geekbrains.ru/certificates/503506" target="_blank" rel="nofollow">
+            <img class="certificates__image" src="media/images/js-1.jpg" alt="Курс «JavaScript. Уровень 1. Интерактив на JS»" title="Курс «JavaScript. Уровень 1. Интерактив на JS»">
+          </a></li><li class="mirrored"> <a href="https://geekbrains.ru/certificates/546690" target="_blank" rel="nofollow">
+            <img class="certificates__image" src="media/images/jQuery.jpg" alt="Курс «jQuery для профессионалов. О селекторах, их использовании и сравнении с чистым JavaScript»" title="Курс «jQuery для профессионалов. О селекторах, их использовании и сравнении с чистым JavaScript»">
+          </a></li></ul>
+        </div>
+        <div class="buttons next"><img class="buttons__arrow" src="media/images/arrow-right.png" alt="вправо"></div>
       </div>
     </section>
-    <section class="status container">
-      <h2 class="section-title">Мой статус</h2>
-      <p>#яверстальщик!</p>
+    <hr class="content__line">
+    <!-- Портфолио -->
+    <section id="portfolio" class="portfolio">
+      <h2>Мои работы</h2>
+      <div class="portfolio__box">
+        <article class="portfolio__miniature-box">
+          <img class="portfolio__miniature-img" src="media/img-p/Safronova.jpg" alt="Верстальщик Сафронова Татьяна Website">
+          <div class="portfolio__miniature-hidden">
+            <h3>Сайт-портфолио.</h3>
+            <a class="portfolio__button button" href="index.html">Смотреть</a>
+            <p>Респонсивная верстка без макета на flex. Использовались: Less, БЭМ, микроформат hCard, иконочный шрифт, jQuery.</p>
+          </div>
+        </article>
+        <article class="portfolio__miniature-box">
+          <img class="portfolio__miniature-img" src="media/img-p/Flat.jpg" alt="Flat Style Website">
+          <div class="portfolio__miniature-hidden">
+            <h3>Сайт-визитка в стиле Flat.</h3>
+            <a class="portfolio__button button" href="Site-4/">Смотреть</a>
+            <p>Адаптивная верстка. Использовались: препроцессор Less, семантические теги HTML5, методология БЭМ.</p>
+          </div>
+        </article>
+        <article class="portfolio__miniature-box">
+          <img class="portfolio__miniature-img" src="media/img-p/Marcy.jpg" alt="Marcy Personal blog Story">
+          <div class="portfolio__miniature-hidden">
+            <h3>Персональный блог.</h3>
+            <a class="portfolio__button button" href="Site-3/">Смотреть</a>
+            <p>Фиксированная верстка. Использовались: Less, семантические теги HTML5, CSS-трансформация, CSS-анимация, jQuery.</p>
+          </div>
+        </article>
+        <article class="portfolio__miniature-box">
+          <img class="portfolio__miniature-img" src="media/img-p/AlRayhan.jpg" alt="Al Rayhan - UI/UX Expert">
+          <div class="portfolio__miniature-hidden">
+            <h3>Сайт-портфолио.</h3>
+            <a class="portfolio__button button" href="Site-2/">Смотреть</a>
+            <p>Фиксированная верстка на flex и float. Использовались: препроцессор Less, семантические теги HTML5, CSS-трансформация, иконочный шрифт, jQuery.</p>
+          </div>
+        </article>
+        <article class="portfolio__miniature-box">
+          <img class="portfolio__miniature-img" src="media/img-p/interior.jpg" alt="Interior">
+          <div class="portfolio__miniature-hidden">
+            <h3>Интернет-магазин.</h3>
+            <a class="portfolio__button button" href="Site-1/home-page.html">Смотреть</a>
+            <p>Моя первая вёрстка сайта по psd макету. Фиксированная верстка на flex и float. Использовались: препроцессор Less, спрайты.</p>
+          </div>
+        </article>
+      </div>
+
     </section>
-    <section class="contacts container">
-      <h2 class="section-title">Контакты для связи</h2>
-        <p class="contacts-name">Хохлова Светлана</p>
-        <p><i>email:</i> <a href="mailto:hohlova0504@gmail.com">hohlova0504@gmail.com</a></p>
-        <p><i>телефон:</i> <a href="tel:+79110146818">+79110146818</a></p>
+    <!-- Контакты -->
+    <section id="contacts" class="contacts">
+      <h2>Связь со мной</h2>
+      <!--микроформат hCard-->
+      <div class="contacts__vcard vcard">
+        <!--
+        --><span class="fn org vcard__name">Хохлова Светлана</span>
+        <!--<i class="fa fa-address-card-o vcard__icon" aria-hidden="true"></i>Резюме на <a class="link link_white" target="_blank" rel="nofollow" href="https://hh.ru/resume/f6c08fc1ff05c53f2a0039ed1f566747466737">HeadHunter</a>-->
+        <i class="fa fa-map-marker vcard__icon" aria-hidden="true"></i><span class="adr"><span class="locality">г. Санкт-Петербург</span>
+        <i class="fa fa-phone vcard__icon" aria-hidden="true"></i><span class="tel">Позвонить: <a class="value link link_white" title="+7 (911) 014 68 18" href="tel:+7 (911) 014 68 18">
+              <nobr>+7 (911) 014 68 18</nobr>
+            </a></span>
+        <i class="fa fa-envelope-o vcard__icon" aria-hidden="true"></i>Написать: <a class="link link_white" href="mailto:hohlova0504@gmail.com">hohlova0504@gmail.com</a>
+      </div>
     </section>
   </main>
-  <footer class="page-footer">
-    <div class="container">
-      <p>© Svetlana Khokhlova</p>
-      <p>2021</p>
-    </div>
-  </footer>
+</div>
+<div id="scroller" class="scroller" style="display: block;"></div>
+
+
 </body>
 </html>
